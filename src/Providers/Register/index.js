@@ -9,7 +9,7 @@ export const RegisterProvider = ({ children }) => {
   const history = useHistory();
   const functionRegister = (data) => {
     api
-      .post("/users/", data)
+      .post("/user/", data)
       .then((_) => {
         toast.success("Sucesso ao cria a conta");
         history.push("/login");

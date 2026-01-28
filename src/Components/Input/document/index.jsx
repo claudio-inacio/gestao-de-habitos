@@ -1,11 +1,12 @@
 import Input from "..";
 import StringMasks from "../../../utils/StringMasks";
-import { AiOutlineUser } from "react-icons/ai";
+import { FaRegAddressCard } from "react-icons/fa";
+
 
 const InputDocument = (props) => {
   const registerField = props.register(props.name);
   return (
-    <Input icon={AiOutlineUser} {...props}>
+    <Input icon={FaRegAddressCard } {...props}>
       <input
         label="CPF"
         {...registerField}

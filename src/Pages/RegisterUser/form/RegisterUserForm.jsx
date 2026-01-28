@@ -8,11 +8,15 @@ import {
   RgisterText,
   StyledForm,
 } from "./loginFormStyle";
-import { defaultValues, schema } from "./LoginFormConfig";
+import { defaultValues, schema } from "./RegisterUserFormConfig";
 import InputDocument from "../../../Components/Input/document";
 import InputPassword from "../../../Components/Input/password";
+import { AiOutlineUser } from "react-icons/ai";
 
-const LoginForm = ({ loading, handleFunction = () => {} }) => {
+
+import InputText from "../../../Components/Input/text";
+
+const RegisterUserForm = ({ loading, handleFunction = () => {} }) => {
   const { register, handleSubmit, reset, formState } = useForm({
     mode: "onChange",
     defaultValues: defaultValues,
@@ -23,12 +27,23 @@ const LoginForm = ({ loading, handleFunction = () => {} }) => {
 
   return (
     <StyledForm onSubmit={handleSubmit(handleFunction)}>
-      <InputDocument
-        name="username"        
+      <InputText
+        name="name"   
+        icon={AiOutlineUser }
+        // label='Nome de Usuário' 
+        placeholder='Nome de Usuário'    
+        minlength={3}
         disabled={loading}
         isLoading={loading}
         register={register}
-        error={errors.username?.message}
+        error={errors.name?.message}
+      />
+      <InputDocument
+        name="document"        
+        disabled={loading}
+        isLoading={loading}
+        register={register}
+        error={errors.document?.message}
       />
 
       <InputPassword
@@ -39,12 +54,12 @@ const LoginForm = ({ loading, handleFunction = () => {} }) => {
         error={errors.password?.message}
       />
       <ActionsContainer>
-        <Button disabled={!isValid || !!loading} isLoading={!!loading}>{loading ? "Realizando Login" : "Entrar"}</Button>
+        <Button disabled={!isValid || !!loading} isLoading={!!loading}>{loading ? "Cadastrando Usuário" : "Cadastrar"}</Button>
 
         <RgisterText>
-          Não tem conta?{" "}
+          Ja possui conta?{" "}
           <Link to="/register">
-            <span>Faça seu cadastro </span>
+            <span>Login </span>
           </Link>
         </RgisterText>
       </ActionsContainer>
@@ -52,4 +67,4 @@ const LoginForm = ({ loading, handleFunction = () => {} }) => {
   );
 };
 
-export default LoginForm;
+export default RegisterUserForm;
