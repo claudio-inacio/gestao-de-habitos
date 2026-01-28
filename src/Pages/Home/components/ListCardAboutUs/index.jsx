@@ -1,7 +1,7 @@
 import { Container } from "./indexStyle";
 
-import devs from "../../utils/data";
-import CardAboutUs from "../CardAboutUs";
+import devs from "../../../../utils/data";
+import CardAboutUs from "../../../../Components/CardAboutUs";
 
 const ListCardAboutUs = () => {
   return (

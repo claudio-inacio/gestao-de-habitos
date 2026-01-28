@@ -1,6 +1,6 @@
-import UndrawCreateHabit from "../../svg/image_undraw_to_createhabit.svg";
+import UndrawCreateHabit from "../../../../svg/image_undraw_to_createhabit.svg";
 
-import UndrawManageSoftware from "../../svg/undraw_to_manage_software.svg";
+import UndrawManageSoftware from "../../../../svg/undraw_to_manage_software.svg";
 
 import { Container } from "./indexStyle";
 

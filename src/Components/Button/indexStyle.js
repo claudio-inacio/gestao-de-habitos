@@ -9,6 +9,7 @@ export const ButtonComponent = styled.button`
   background-color: var(--bg-button);
   width: 100%;
   height: 40px;
+  padding: 15px;
   font-size: 1rem;
   border-radius: 5px;
   box-shadow: 2px 2px 4px 0px #000000;

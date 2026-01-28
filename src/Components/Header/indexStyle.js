@@ -4,7 +4,6 @@ export const HeaderCustomizer = styled.header`
   height: 60px;
   width: 100%;
   min-width: 370px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,9 +18,9 @@ export const HeaderCustomizer = styled.header`
     display: flex;
     align-items: center;
     margin-top: 15px;
-
+    padding-left: 60px;
     img {
-      height: 60px;
+      height: 150px;
     }
   }
 

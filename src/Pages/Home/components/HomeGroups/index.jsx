@@ -1,4 +1,4 @@
-import CardGroup from "../CardGroup";
+import CardGroup from "../../../../Components/CardGroup";
 import { Container, List } from "./indexStyle";
 
 const HomeGroups = () => {
