@@ -1,0 +1,8 @@
+version: "2"
+tunnels:
+  n8n:
+    proto: http
+    addr: 5678
+  evolution:
+    proto: http
+    addr: 8080
