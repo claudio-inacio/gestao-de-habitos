@@ -1,5 +1,5 @@
 import HomeTitle from "./components/HomeTitle";
-import HomeInfor from "./components/HomeInfor";
+import HomeInfo from "./components/HomeInfo";
 import HomeGroups from "./components/HomeGroups";
 import CardHabitsHome from "./components/CardHabitsHome";
 import ListCardAboutUs from "./components/ListCardAboutUs";
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <HomeTitle />
-      <HomeInfor />
+      <HomeInfo />
       <CardHabitsHome />
       <HomeGroups />
       <ListCardAboutUs />

@@ -1,6 +1,6 @@
 import Button from "../../../../Components/Button";
 import { AiOutlineUser } from "react-icons/ai";
-
+import imageExplicative from "../../../../images/gesta-habitos-explicative.png";
 import { FaUserEdit } from "react-icons/fa";
 import {
   BoxButton,
@@ -32,7 +32,12 @@ const HomeTitle = () => {
           </Button>
         </BoxButton>
       </SectionContainer>
-      <DivImage />
+      <DivImage>
+             <img
+          src={imageExplicative}
+          alt="imagem de um celular do undraw com um usuario ao lado"
+        />
+      </DivImage>
     </HomeTitleContainer>
   );
 };

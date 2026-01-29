@@ -34,7 +34,7 @@ export const SectionContainer = styled.div`
     font-size: 1.5rem;
 
     @media (min-width: 1099px) {
-      text-align: center;
+      text-align: start;
       font-size: 2.5rem;
       font-weight: 600;
       color: var(--color-title-light);
@@ -70,15 +70,18 @@ export const BoxButton = styled.div`
 `;
 
 export const DivImage = styled.div`
-  background: url(${imageExplicative}) no-repeat center;
-  
   background-size: contain;
-  width: 300px;
-  height: 300px;
+  img{
+
+    width: 350px;
+    height: 300px;
+  }
   @media (min-width: 1099px) {
-    width: 300px;
-    height: 450px;
-    max-height: 100%;
-    max-width: 100%;
+    img {
+
+      width: 350px;
+      height: 300px;
+
+    }
   }
 `;
