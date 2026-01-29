@@ -1,15 +1,14 @@
-import HomeTitle from "../../Components/HomeTitle";
-import HomeInfor from "../../Components/HomeInfor";
-import HomeGroups from "../../Components/HomeGroups";
-import CardHabitsHome from "../../Components/CardHabitsHome";
-import CardAboutUs from "../../Components/CardAboutUs";
-import ListCardAboutUs from "../../Components/ListCardAboutUs";
+import HomeTitle from "./components/HomeTitle";
+import HomeInfo from "./components/HomeInfo";
+import HomeGroups from "./components/HomeGroups";
+import CardHabitsHome from "./components/CardHabitsHome";
+import ListCardAboutUs from "./components/ListCardAboutUs";
 
 const Home = () => {
   return (
     <div>
       <HomeTitle />
-      <HomeInfor />
+      <HomeInfo />
       <CardHabitsHome />
       <HomeGroups />
       <ListCardAboutUs />

@@ -8,8 +8,16 @@ export const Container = styled.section`
   margin: 5px;
   display: flex;
   background-color: var(--color-primary-light);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
+  border-radius: 12px;
+
+  box-shadow:
+    0px 6px 16px rgba(120, 104, 230, 0.15),
+    0px 12px 32px rgba(120, 104, 230, 0.08);
+
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  padding: 10px 15px;
   cursor: pointer;
 `;
 
@@ -25,7 +33,7 @@ export const CardContent = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: start;
   color: var(--color-text-light);
 
   h3 {
@@ -33,7 +41,7 @@ export const CardContent = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-bottom: 20px;
+
     font-size: 1.1rem;
   }
   h5 {
@@ -63,12 +71,18 @@ export const GroupMembersContainer = styled.div`
       width: 31px;
       height: 31px;
       background-color: #d9d9d9;
-      margin-right: 5px;
+
       border-radius: 100%;
       margin-bottom: 20px;
     }
   }
   p {
     font-size: 0.75rem;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: 20px;
   }
 `;

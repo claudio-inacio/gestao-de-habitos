@@ -18,6 +18,7 @@ import {
   IconFormHeader,
 } from "./indexStyle";
 import { useRegister } from "../../Providers/Register";
+import RegisterUserForm from "./form/RegisterUserForm";
 
 const RegisterUser = () => {
   const formShema = yup.object().shape({
@@ -44,7 +45,9 @@ const RegisterUser = () => {
       <RegistrationContent>
         <h2>Cadastre-se gratuitamente</h2>
         <ContainerForm>
-          <Form onSubmit={handleSubmit(functionRegister)}>
+          <RegisterUserForm handleFunction={functionRegister}/>
+
+          {/* <Form onSubmit={handleSubmit(functionRegister)}>
             <FormHeader>
               <p>Cadastro</p>
               <IconFormHeader>
@@ -76,10 +79,7 @@ const RegisterUser = () => {
               error={errors.password?.message}
             />
             <Button type="submit">Cadastrar</Button>
-          </Form>
-          <InfoHasAccount>
-            Já possui conta? <Link to={"/login"}>Login</Link>
-          </InfoHasAccount>
+          </Form> */}
         </ContainerForm>
       </RegistrationContent>
 

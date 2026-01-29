@@ -1,4 +1,6 @@
 import { useGroup } from "../../Providers/Grupos";
+import iconUserColor from "../../images/user-icon-color.png";
+import iconUserIncolor from "../../images/user-icon-incolor.png";
 import {
   CardContent,
   Container,
@@ -18,9 +20,10 @@ const CardGroup = ({ groups }) => {
         <GroupMembersContainer>
           <h5>Membros</h5>
           <div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <img src={iconUserColor} alt="membericon" />
+            <img src={iconUserIncolor} alt="membericon" />
+            <img src={iconUserColor} alt="membericon" />
+            <img src={iconUserIncolor} alt="membericon" />
           </div>
           <p>Categoria: {groups.category} </p>
         </GroupMembersContainer>

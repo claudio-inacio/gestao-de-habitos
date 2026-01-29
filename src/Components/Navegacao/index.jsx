@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { LoginContext } from "../../Providers/Login";
-import { NavegationCustumizer } from "./indexStyle";
+import { NavigationCustomizer } from "./indexStyle";
 
 import { FiX } from "react-icons/fi";
 
@@ -9,7 +9,7 @@ const Navegation = ({ isOpen }) => {
   const { token, logout } = useContext(LoginContext);
 
   return (
-    <NavegationCustumizer open={isOpen}>
+    <NavigationCustomizer open={isOpen}>
       <ul>
         {!!token ? (
           <>
@@ -46,7 +46,7 @@ const Navegation = ({ isOpen }) => {
           </>
         )}
       </ul>
-    </NavegationCustumizer>
+    </NavigationCustomizer>
   );
 };
 

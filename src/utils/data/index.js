@@ -1,4 +1,4 @@
-import InacioProfile from "../../image/inacio.jpeg";
+import InacioProfile from "../../images/inacio.jpeg";
 const devs = [
 
   {
