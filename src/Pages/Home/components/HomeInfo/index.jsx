@@ -1,10 +1,8 @@
 import HabitsList from "../../../../images/gestao-habitos-check.png";
-
 import HabitsCheck from "../../../../images/gestao-habitos-list.png";
 import iconCheck from "../../../../images/check-icon.png";
 import iconNotification from "../../../../images/notification-icon.png";
 import ActionsExplicative from "../ActionsExplicative";
-
 import { Container } from "./indexStyle";
 
 const HomeInfo = () => {

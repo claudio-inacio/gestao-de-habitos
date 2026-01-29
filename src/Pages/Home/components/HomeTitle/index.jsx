@@ -33,7 +33,7 @@ const HomeTitle = () => {
         </BoxButton>
       </SectionContainer>
       <DivImage>
-             <img
+        <img
           src={imageExplicative}
           alt="imagem de um celular do undraw com um usuario ao lado"
         />

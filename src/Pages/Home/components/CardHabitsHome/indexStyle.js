@@ -3,16 +3,15 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 62px auto 32px;
+  align-items: start;
 
-  h2 {
+  h3 {
     width: 340px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
     margin: 16px auto;
-    text-align: center;
+    text-align: start;
 
     @media screen and (min-width: 768px) {
       width: 758px;
@@ -24,12 +23,15 @@ export const MainContainer = styled.div`
 
 export const Container = styled.div`
   display: flex;
+  gap: 15px;
   flex-direction: column;
   align-items: center;
+  margin: 12px auto;
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
     width: 1000px;
+
     margin: 12px auto;
   }
 `;
@@ -45,66 +47,4 @@ export const Circle = styled.div`
   height: 65px;
   background: #e4e3e3;
   border-radius: 50%;
-`;
-
-export const SubContainer = styled.div`
-  width: 300px;
-  margin: 30px auto;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: 2px 2px 15px var(--bg-color-menu-mobile-light);
-  p {
-    margin-top: 2px;
-    margin-left: 12px;
-  }
-
-  @media (min-width: 768px) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-
-    p {
-      margin-top: 2px;
-      margin-left: 12px;
-    }
-
-    @media screen and (min-width: 1024px){
-      width: 300px;
-      margin: 0px 12px;
-    }
-  }
-`;
-
-export const HeadContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const Line = styled.div`
-  @media (max-width: 800px) {
-    width: ${(props) => props.width};
-    background-color: ${(props) => props.color};
-    border: 2px solid ${(props) => props.color};
-  }
-  width: ${(props) => props.width};
-  background-color: ${(props) => props.color};
-  border: 2px solid ${(props) => props.color};
-`;
-export const SubHeadContainer = styled.div`
-  display: flex;
-  align-items: center;
-
-  p {
-    margin-left: 12px;
-  }
-`;
-
-export const StatusActivity = styled.div`
-  display: flex;
-  margin-top: ${(props) => props.margin};
-  flex-direction: column;
-  align-items: flex-end;
 `;

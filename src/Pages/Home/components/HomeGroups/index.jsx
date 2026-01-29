@@ -4,10 +4,10 @@ import { Container, List } from "./indexStyle";
 const HomeGroups = () => {
   return (
     <Container>
-      <h2>
+      <h3>
         Conecte-se com grupos e amplie sua rede com pessoas que desejam alcançar
         as mesmas metas que as suas!
-      </h2>
+      </h3>
       <List>
         <CardGroup
           groups={{

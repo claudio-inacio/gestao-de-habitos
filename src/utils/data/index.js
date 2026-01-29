@@ -1,4 +1,4 @@
-// import InacioProfile from "../../image/inacio.jpeg";
+import InacioProfile from "../../images/inacio.jpeg";
 const devs = [
 
   {
@@ -7,7 +7,7 @@ const devs = [
     description:
       "Meu nome é Cláudio Inácio, tenho 27 anos, me apaixonei pelo desenvolvimento front-end desde que comecei a estudar em 2021, após finalizar o curso de front-end vou começar o novo desafio de me especializar em Desenvolvimento Mobile. Acesse minhas redes sociais abaixo!!",
     office: "Front-End Developer",
-    // profile: InacioProfile,
+    profile: InacioProfile,
     social: {
       linkedin:
         "https://www.linkedin.com/in/claudio-in%C3%A1cio-felipe-junior/",

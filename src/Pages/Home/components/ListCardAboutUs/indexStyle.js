@@ -1,22 +1,24 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 62px;
+export const Container = styled.section`
+  margin-top: 80px;
+  padding: 40px 0px;
+  text-align: center;
+  align-items: center;
+  background-color: var(--color-second-light);
+  width: 100%;
+  max-width: 100%;
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: var(--color-text-light);
+  }
 
-    > div{
-        width: 344px;
-        margin: 32px auto;
-        display: flex;
-        flex-direction: column;
+  > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
 
-        @media screen and (min-width: 768px){
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 700px;
-    }
-    }
-`
+
+  }
+`;

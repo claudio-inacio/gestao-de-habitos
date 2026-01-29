@@ -1,106 +1,106 @@
 import styled from "styled-components";
 
-
-export const CardSecundary = styled.div`
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-
-`;
-export const CardThird = styled.div`
- @media (max-width: 740px){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
- }
-`
-
 export const Container = styled.div`
- margin-top: 25px;
- width: 340px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- color: var(--color-text-light) ;
- background-color: var(--color-primary-light);
- 
- h1{
-    text-align: center;
- }
+  width: 700px;
+  max-width: 100%;
+  padding: 20px;
 
- h3{
-  text-align: center;
- }
- h4{
-  text-align: center;
-  margin: 10px;
- }
- p{
-  text-align: justify;
- }
- 
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+
+  box-shadow:
+    0px 6px 16px rgba(120, 104, 230, 0.15),
+    0px 12px 32px rgba(120, 104, 230, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0px 8px 20px rgba(120, 104, 230, 0.18),
+      0px 16px 40px rgba(120, 104, 230, 0.12);
+  }
+  @media (max-width: 800px) {
+    width: 80%;
+    max-width: 80%;
+
+    
+  }
+`;
+
+export const Header = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
 `;
 
 export const Picture = styled.img`
-  background-color: green;
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  display: block;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  
-  align-items: center;
-  margin: 10px;
-`;
-export const Card = styled.div`
-   width: 80%;
-   background-color: #ECECEC;
+  object-fit: cover;
 `;
 
-export const CircleBlue = styled.div`
-  background-color: #1361F9;
-  width: 40px;
-  height: 40px;
-  display: block;
-  border-radius: 50%;
-  margin: 10px;
+export const Info = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+  }
+
+  span {
+    font-size: 0.85rem;
+    color: #777;
+  }
 `;
 
-
-export const CircleBlack = styled.div`
-  background-color: #24292F;
-  width: 40px;
-  height: 40px;
-  display: block;
-  border-radius: 50%;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-
-export const CirclePink = styled.div`
-  background-color: #E54B73;
-  width: 40px;
-  height: 40px;
-  display: block;
-  border-radius: 50%;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const Description = styled.div`
+  p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+  }
 `;
 
 export const ContainerCircles = styled.div`
-   display: flex;
-   width: 80%;
-   justify-content: flex-end ;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+`;
+
+export const Circle = styled.div`
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: ${({ color }) => color};
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+
+  a {
+    color: #fff;
+  }
+
+  &:hover {
+    transform: scale(1.08);
+    opacity: 0.9;
+  }
 `;
